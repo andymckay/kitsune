@@ -28,3 +28,8 @@ def queue_status(request):
         xml = ''
         status = 503
     return HttpResponse(xml, mimetype='application/xml', status=status)
+
+
+@require_GET
+def chatroom(request):
+    return jingo.render(request, 'chat/room.html')

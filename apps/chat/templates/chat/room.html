@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% set scripts=('chatroom',) %}
+
+{% block content %}
+
+<div id="messages" style="height: 400px; width: 60%; overflow: auto; border: 1px solid #99f; border-radius: 4px; padding: 4px;"></div>
+<form action="#">
+<textarea id="msg"></textarea>
+<input type="submit" id="sender" value="Speak" />
+</form>
+
+{% endblock %}

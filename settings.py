@@ -436,6 +436,10 @@ MINIFY_BUNDLES = {
             'js/aaq.js',
             'js/mobile.js',
         ),
+        'chatroom': (
+            'js/socket.io.min.js',
+            'js/chatroom.js',
+        ),
     },
 }
 
