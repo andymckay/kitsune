@@ -54,7 +54,9 @@
 <body class="moz-header-slim {{ classes }}"
       data-readonly="{{ settings.READ_ONLY|json }}"
       data-for-os="{{ for_os|json }}"
-      data-for-version="{{ for_version|json }}">
+      data-for-version="{{ for_version|json }}"
+      data-usernames-api="{{ url('users.api.usernames') }}"
+      data-usernames-test="{{ waffle.sample('usernames-test')|json }}">
 
 {% include 'layout/header.html' %}
 
